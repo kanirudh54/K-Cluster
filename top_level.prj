@@ -1,0 +1,8 @@
+vhdl work "ipcore_dir/rom.vhd"
+vhdl work "ipcore_dir/centrroid.vhd"
+vhdl work "ipcore_dir/mindis.vhd"
+vhdl work "ipcore_dir/addsub.vhd"
+vhdl work "ipcore_dir/divide.vhd"
+vhdl work "ipcore_dir/comparator.vhd"
+vhdl work "comm_fpga_fx2.vhd"
+vhdl work "top_level.vhd"

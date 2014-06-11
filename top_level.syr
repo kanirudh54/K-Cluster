@@ -1,0 +1,176 @@
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: top_level.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_level.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_level"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : top_level
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Xilinx\kmeans\ipcore_dir\rom.vhd" into library work
+Parsing entity <rom>.
+Parsing architecture <rom_a> of entity <rom>.
+Parsing VHDL file "C:\Xilinx\kmeans\ipcore_dir\centrroid.vhd" into library work
+Parsing entity <centrroid>.
+Parsing architecture <centrroid_a> of entity <centrroid>.
+Parsing VHDL file "C:\Xilinx\kmeans\ipcore_dir\mindis.vhd" into library work
+Parsing entity <mindis>.
+Parsing architecture <mindis_a> of entity <mindis>.
+Parsing VHDL file "C:\Xilinx\kmeans\ipcore_dir\addsub.vhd" into library work
+Parsing entity <addsub>.
+Parsing architecture <addsub_a> of entity <addsub>.
+Parsing VHDL file "C:\Xilinx\kmeans\ipcore_dir\divide.vhd" into library work
+Parsing entity <divide>.
+Parsing architecture <divide_a> of entity <divide>.
+Parsing VHDL file "C:\Xilinx\kmeans\ipcore_dir\comparator.vhd" into library work
+Parsing entity <comparator>.
+Parsing architecture <comparator_a> of entity <comparator>.
+Parsing VHDL file "C:\Xilinx\kmeans\comm_fpga_fx2.vhd" into library work
+Parsing entity <comm_fpga_fx2>.
+Parsing architecture <behavioural> of entity <comm_fpga_fx2>.
+Parsing VHDL file "C:\Xilinx\kmeans\top_level.vhd" into library work
+Parsing entity <top_level>.
+Parsing architecture <behavioural> of entity <top_level>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top_level> (architecture <behavioural>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Xilinx\kmeans\top_level.vhd" Line 145: Using initial value "00000000" for reg3_next since it is never assigned
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 212: douta should be on the sensitivity list of the process
+Non-constant loop found; will execute up to 5000 iterations
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 231: douta should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 232: doutb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 234: result_add should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 241: result_add should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 243: douta should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 244: doutb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 246: result_add should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 253: result_add should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 258: result_comp should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 262: addrb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 270: doutc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 272: doutb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 273: doutb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 274: doutb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 278: douta should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 280: doutc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 282: result_add should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 283: dinb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 286: douta should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 288: doutc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 290: result_add should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 293: doutc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 295: doutb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 296: doutb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 300: doutc should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 302: result_add should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 308: doutb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 309: doutb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 310: doutb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 317: result_div should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 318: dinb should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Xilinx\kmeans\top_level.vhd" Line 324: result_div should be on the sensitivity list of the process
+ERROR:Portability:3 - This Xilinx application has run out of memory or has encountered a memory conflict.  Current memory usage is 2087624 kb.  You can try increasing your system's physical or virtual memory.  If you are using a Win32 system, you can increase your application memory from 2GB to 3GB using the /3G switch in your boot.ini file. For more information on this, please refer to Xilinx Answer Record #14932. For technical support on this issue, you can open a WebCase with this project attached at http://www.xilinx.com/support. 

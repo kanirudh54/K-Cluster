@@ -1,0 +1,15 @@
+# Output products list for <addsub>
+_xmsgs\pn_parser.xmsgs
+addsub.asy
+addsub.gise
+addsub.ngc
+addsub.sym
+addsub.vhd
+addsub.vho
+addsub.xco
+addsub.xise
+addsub\doc\floating_point_ds335.pdf
+addsub\doc\floating_point_v5_0_readme.txt
+addsub\doc\floating_point_v5_0_vinfo.html
+addsub_flist.txt
+addsub_xmdf.tcl

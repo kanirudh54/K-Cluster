@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\kmeans\top_level.ncd
+OUTFILE=C:\Xilinx\kmeans\top_level.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Xilinx\kmeans
+LICENSE=ISE
+USER_INFO=178200940_1777492345_210560825_321
